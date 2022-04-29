@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>UnitConverter</title>
+        <style>
+            body { 
+                background-color:lightblue;
+            }
+            
+            #Greeting {
+                text-align:center;padding-top:75px;font-size:75px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            }
+            .Length-box {
+                height:250px;
+                width:445px;
+                position:relative;
+                background-color:lightsteelblue;
+                text-align:center;
+                position:absolute;
+                left:38%
+            }
+            #LENGTH {
+                text-align:center;
+                font-size:50px;
+
+            }
+            
+
+
+           
+
+            
+        </style>
+    </head>
+    <body>
+    <!---Title-->
+        <p id="Greeting">Unit Converter</p>
+        <div class="Length-box">
+<!---Title of the unit converter container itself  -->
+            <p id:LENGTH>Mass and Length</p>
+<!--The Select operation customised with bootstrap with id's so that values can be later targetted with javascript-->
+            <select id="InputUnitType" class="form-select form-select-border-width:4 " aria-label="Default select example">
+                <option selected>Select Input Unit</option>
+                <option value="Miles">Miles</option>
+                <option value="Kilometers">Kilometers</option>
+                <option value="Meters">Meters</option>
+                <option value="Centimeters">Centimeters</option>
+                <option value="Millimeters">Millimeters</option>
+                <option value="Micrometers">Micrometers</option>
+                <option value="Kilograms">Kilograms</option>
+                <option value="Grams">Grams</option>
+                <option value="Pounds">Pounds</option>
+            </select>
+
+<!--Input for the value the user wants to convert-->
+            <div class="input-group-addon-border-color: lightsalmon mb-1">
+            <input id="InputValue" type="text" class="form-control" placeholder="Input Value" aria-label="Username" aria-describedby="basic-addon1">>
+        
+            </div>
+            <select id="OutputUnitType" class="form-select form-select-border-width:4 " aria-label="Default select example">
+                <option selected>Select Output Unit</option>
+                <option value="Miles">Miles</option>
+                <option value="Kilometers">Kilometers</option>
+                <option value="Meters">Meters</option>
+                <option value="Centimeters">Centimeters</option>
+                <option value="Millimeters">Millimeters</option>
+                <option value="Micrometers">Micrometers</option>
+                <option value="Kilograms">Kilograms</option>
+                <option value="Grams">Grams</option>
+                <option value="Pounds">Pounds</option>
+            </select>
+<!--Input for the converted value -->
+
+            <div class="input-group-addon-border-color: lightsalmon mb-1">
+            <input id="OutputValue" type="text" class="form-control" placeholder="Output Value" aria-label="Username" aria-describedby="basic-addon1" >
+            </div>
+
+            
+
+        </div>
+<!--Links to the script creatred for the java that performs the conversion and bootstrap-->
+        <script src="UnitConverterV2java.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
